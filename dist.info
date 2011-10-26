@@ -4,9 +4,9 @@ name = "alt-getopt"
 version = "0.7"
 
 maintainer = "Peter Drahoš"
-desc = "Process application arguments the same way as getopt_long",
-url = "http://luaforge.net/projects/alt-getopt/",
-license = "MIT/X11" 
+desc = "Process application arguments the same way as getopt_long"
+url = "http://luaforge.net/projects/alt-getopt/"
+license = "MIT/X11"
 
 depends = {
 	"lua >= 5.1",
