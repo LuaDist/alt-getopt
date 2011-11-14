@@ -4,7 +4,7 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-project ( moonscript NONE )
+project ( alt-getopt NONE )
 cmake_minimum_required ( VERSION 2.6 )
 include ( dist.cmake )
 
