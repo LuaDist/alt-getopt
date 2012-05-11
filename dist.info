@@ -7,6 +7,7 @@ maintainer = "Peter Drahoš"
 desc = "Process application arguments the same way as getopt_long"
 url = "http://luaforge.net/projects/alt-getopt/"
 license = "MIT/X11"
+author = "cheusov"
 
 depends = {
 	"lua >= 5.1",
