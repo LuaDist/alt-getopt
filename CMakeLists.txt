@@ -11,4 +11,4 @@ include ( lua )
 
 install_lua_module( alt_getopt alt_getopt.lua )
 install_data( README NEWS )
-install_test( tests/ )
+install_test( tests/ alt_getopt )
