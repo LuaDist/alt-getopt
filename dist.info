@@ -1,7 +1,7 @@
 --- This file is part of LuaDist project
 
 name = "alt-getopt"
-version = "0.7-1"
+version = "0.7"
 
 maintainer = "Peter Drahoš"
 desc = "Process application arguments the same way as getopt_long"
