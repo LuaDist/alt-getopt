@@ -21,6 +21,8 @@
 
 local type, pairs, ipairs, io, os = type, pairs, ipairs, io, os
 
+module ("alt_getopt")
+
 local function convert_short2long (opts)
    local i = 1
    local len = #opts
@@ -59,7 +61,7 @@ local function canonize (options, opt)
    return opt
 end
 
-local function get_ordered_opts (arg, sh_opts, long_opts)
+function get_ordered_opts (arg, sh_opts, long_opts)
    local i      = 1
    local count  = 1
    local opts   = {}
@@ -148,7 +150,7 @@ local function get_ordered_opts (arg, sh_opts, long_opts)
    return opts,i,optarg
 end
 
-local function get_opts (arg, sh_opts, long_opts)
+function get_opts (arg, sh_opts, long_opts)
    local ret = {}
 
    local opts,optind,optarg = get_ordered_opts (arg, sh_opts, long_opts)
@@ -162,8 +164,3 @@ local function get_opts (arg, sh_opts, long_opts)
 
    return ret,optind
 end
-
-return {
-    get_ordered_opts = get_ordered_opts,
-    get_opts = get_opts,
-}
